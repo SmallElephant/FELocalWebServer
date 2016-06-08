@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B4DCD55544DC530B3503A55 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 674385375C534E4FA611BEB5 /* libPods.a */; };
+		A81EFF601D07B08B00685336 /* FEWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = A81EFF5F1D07B08B00685336 /* FEWebUploader.m */; };
+		A81EFF611D07B08B00685336 /* FEWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = A81EFF5F1D07B08B00685336 /* FEWebUploader.m */; };
+		A81EFF631D07B7A300685336 /* FEWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A81EFF621D07B7A300685336 /* FEWebUploader.bundle */; };
+		A81EFF641D07B7A300685336 /* FEWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A81EFF621D07B7A300685336 /* FEWebUploader.bundle */; };
+		A8D645B01D059CF4006241BC /* ddd.html in Resources */ = {isa = PBXBuildFile; fileRef = A8D645AF1D059CF4006241BC /* ddd.html */; };
+		A8D645B11D059CF4006241BC /* ddd.html in Resources */ = {isa = PBXBuildFile; fileRef = A8D645AF1D059CF4006241BC /* ddd.html */; };
 		A8EA2D561D057AFA00CA255E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EA2D551D057AFA00CA255E /* main.m */; };
 		A8EA2D591D057AFA00CA255E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EA2D581D057AFA00CA255E /* AppDelegate.m */; };
 		A8EA2D5C1D057AFA00CA255E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EA2D5B1D057AFA00CA255E /* ViewController.m */; };
@@ -35,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		674385375C534E4FA611BEB5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3B7CBB9A44DE6F2151321E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A81EFF5E1D07B08B00685336 /* FEWebUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEWebUploader.h; sourceTree = "<group>"; };
+		A81EFF5F1D07B08B00685336 /* FEWebUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEWebUploader.m; sourceTree = "<group>"; };
+		A81EFF621D07B7A300685336 /* FEWebUploader.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FEWebUploader.bundle; sourceTree = "<group>"; };
+		A8D645AF1D059CF4006241BC /* ddd.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ddd.html; sourceTree = "<group>"; };
 		A8EA2D511D057AFA00CA255E /* FELocalWebServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FELocalWebServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EA2D551D057AFA00CA255E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8EA2D571D057AFA00CA255E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +64,7 @@
 		A8EA2D751D057AFA00CA255E /* FELocalWebServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FELocalWebServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EA2D791D057AFA00CA255E /* FELocalWebServerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FELocalWebServerUITests.m; sourceTree = "<group>"; };
 		A8EA2D7B1D057AFA00CA255E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6CA709BDF192EBD3F87E925 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4DCD55544DC530B3503A55 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34FB9F203505D3CE788DFCC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6CA709BDF192EBD3F87E925 /* Pods.debug.xcconfig */,
+				9C3B7CBB9A44DE6F2151321E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86079E4D95E6D1B0494103B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				674385375C534E4FA611BEB5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A81EFF5D1D07B06300685336 /* WebUploader */ = {
+			isa = PBXGroup;
+			children = (
+				A81EFF5E1D07B08B00685336 /* FEWebUploader.h */,
+				A81EFF5F1D07B08B00685336 /* FEWebUploader.m */,
+				A81EFF621D07B7A300685336 /* FEWebUploader.bundle */,
+			);
+			path = WebUploader;
+			sourceTree = "<group>";
+		};
+		A8D645AE1D059CC8006241BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8D645AF1D059CF4006241BC /* ddd.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A8EA2D481D057AFA00CA255E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +135,8 @@
 				A8EA2D6D1D057AFA00CA255E /* FELocalWebServerTests */,
 				A8EA2D781D057AFA00CA255E /* FELocalWebServerUITests */,
 				A8EA2D521D057AFA00CA255E /* Products */,
+				34FB9F203505D3CE788DFCC8 /* Pods */,
+				86079E4D95E6D1B0494103B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +153,8 @@
 		A8EA2D531D057AFA00CA255E /* FELocalWebServer */ = {
 			isa = PBXGroup;
 			children = (
+				A81EFF5D1D07B06300685336 /* WebUploader */,
+				A8D645AE1D059CC8006241BC /* Resources */,
 				A8EA2D571D057AFA00CA255E /* AppDelegate.h */,
 				A8EA2D581D057AFA00CA255E /* AppDelegate.m */,
 				A8EA2D5A1D057AFA00CA255E /* ViewController.h */,
@@ -147,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8EA2D7E1D057AFA00CA255E /* Build configuration list for PBXNativeTarget "FELocalWebServer" */;
 			buildPhases = (
+				FCEE73EFB45908F33C1A216A /* Check Pods Manifest.lock */,
 				A8EA2D4D1D057AFA00CA255E /* Sources */,
 				A8EA2D4E1D057AFA00CA255E /* Frameworks */,
 				A8EA2D4F1D057AFA00CA255E /* Resources */,
+				AE8C1965986B01043605280A /* Embed Pods Frameworks */,
+				734BD97A808155DF83BECF96 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,7 +300,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A81EFF631D07B7A300685336 /* FEWebUploader.bundle in Resources */,
 				A8EA2D641D057AFA00CA255E /* LaunchScreen.storyboard in Resources */,
+				A8D645B01D059CF4006241BC /* ddd.html in Resources */,
 				A8EA2D611D057AFA00CA255E /* Assets.xcassets in Resources */,
 				A8EA2D5F1D057AFA00CA255E /* Main.storyboard in Resources */,
 			);
@@ -253,6 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D645B11D059CF4006241BC /* ddd.html in Resources */,
+				A81EFF641D07B7A300685336 /* FEWebUploader.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +326,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		734BD97A808155DF83BECF96 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE8C1965986B01043605280A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCEE73EFB45908F33C1A216A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A8EA2D4D1D057AFA00CA255E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,6 +382,7 @@
 				A8EA2D5C1D057AFA00CA255E /* ViewController.m in Sources */,
 				A8EA2D591D057AFA00CA255E /* AppDelegate.m in Sources */,
 				A8EA2D561D057AFA00CA255E /* main.m in Sources */,
+				A81EFF601D07B08B00685336 /* FEWebUploader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8EA2D6F1D057AFA00CA255E /* FELocalWebServerTests.m in Sources */,
+				A81EFF611D07B08B00685336 /* FEWebUploader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,9 +522,11 @@
 		};
 		A8EA2D7F1D057AFA00CA255E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6CA709BDF192EBD3F87E925 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FELocalWebServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FlyElephant.FELocalWebServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,9 +535,11 @@
 		};
 		A8EA2D801D057AFA00CA255E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C3B7CBB9A44DE6F2151321E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FELocalWebServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FlyElephant.FELocalWebServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +611,7 @@
 				A8EA2D801D057AFA00CA255E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8EA2D811D057AFA00CA255E /* Build configuration list for PBXNativeTarget "FELocalWebServerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +620,7 @@
 				A8EA2D831D057AFA00CA255E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8EA2D841D057AFA00CA255E /* Build configuration list for PBXNativeTarget "FELocalWebServerUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +629,7 @@
 				A8EA2D861D057AFA00CA255E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
