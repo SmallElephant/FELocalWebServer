@@ -1,7 +1,11 @@
 var _path = null;
 
 $(document).ready(function() {
-                  
+        
+//    $(".upload-progress").css("display","none");
+//
+
+
   $("#upload-container").click(function(event) {
     $("#fileupload").click();
   });
@@ -25,14 +29,15 @@ $(document).ready(function() {
     
     start: function(e) {
       // $(".uploading").show();
-      console.log("开始");
-      $(".uploading").text("开始");
+     $(".upload-progress").css("display","block");
+     $(".upload-container").css("background-image","url(../images/uploading.png)");
     },
     
     stop: function(e) {
       // $(".uploading").hide();
       console.log("结束");
-      $(".uploading").text("结束");
+//     $(".upload-progress").css("display","none");
+     $(".upload-container").css("background-image","url(../images/upload_normal.png)");
     },
     
      add: function(e, data) {
@@ -54,7 +59,8 @@ $(document).ready(function() {
     progress: function(e, data) {
       var progress = parseInt(data.loaded / data.total * 100, 10);
       console.log("已加载:"+data.loaded+"---上传大小:"+data.total+"---进度:"+progress);
-      $(".uploading").text(progress + "%");
+      $(".upload-progress-bar").css("width",progress + "%");
+      $(".upload-progress-rate").text(progress + "%");
       // data.context.find(".progress-bar").css("width", progress + "%");
     },
     

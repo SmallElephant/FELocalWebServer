@@ -140,6 +140,9 @@ static const NSInteger Port=7258;
 }
 
 -(void)loadWebUploader{
+    if (self.customWebUploader) {
+        [self.customWebUploader stop];
+    }
     NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     
     NSLog(@"上传文件的地址:%@",documentsPath);
@@ -150,6 +153,9 @@ static const NSInteger Port=7258;
 }
 
 -(void)loadCustomUploader{
+    if (self.webUploader!=nil) {
+        [self.webUploader stop];
+    }
     NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     
     NSLog(@"上传文件的地址:%@",documentsPath);

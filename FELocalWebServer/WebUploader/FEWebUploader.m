@@ -54,6 +54,11 @@
 
 @implementation FEWebUploader (Methods)
 
+// Must match implementation in GCDWebDAVServer
+- (BOOL)_checkSandboxedPath:(NSString*)path {
+    return [[path stringByStandardizingPath] hasPrefix:_uploadDirectory];
+}
+
 - (BOOL)_checkFileExtension:(NSString*)fileName {
     if (_allowedExtensions && ![_allowedExtensions containsObject:[[fileName pathExtension] lowercaseString]]) {
         return NO;
@@ -94,7 +99,7 @@
 
 
     NSError* error = nil;
-    
+//    30s 3M 1M/10s 100KB/s
     if (![[NSFileManager defaultManager] moveItemAtPath:file.temporaryPath toPath:absolutePath error:&error]) {
             return [GCDWebServerErrorResponse responseWithServerError:kGCDWebServerHTTPStatusCode_InternalServerError underlyingError:error message:@"Failed moving uploaded file to \"%@\"", absolutePath];
     }
@@ -111,7 +116,8 @@
 //    NSRange range = [[request.headers objectForKey:@"Accept"] rangeOfString:@"application/json" options:NSCaseInsensitiveSearch];
 //    NSString* contentType = (range.location != NSNotFound ? @"application/json" : @"text/plain; charset=utf-8");  // Required when using iFrame transport (see https://github.com/blueimp/jQuery-File-Upload/wiki/Setup)
 //    
-//    GCDWebServerMultiPartFile* file = [request firstFileForControlName:@"files[]"];
+////    GCDWebServerMultiPartFile* file = [request firstFileForControlName:@"files[]"];
+//    GCDWebServerMultiPartFile *file=request.files[0];
 //    if ((!_allowHidden && [file.fileName hasPrefix:@"."]) || ![self _checkFileExtension:file.fileName]) {
 //        return [GCDWebServerErrorResponse responseWithClientError:kGCDWebServerHTTPStatusCode_Forbidden message:@"Uploaded file name \"%@\" is not allowed", file.fileName];
 //    }

@@ -528,8 +528,9 @@
 				INFOPLIST_FILE = FELocalWebServer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FlyElephant.FELocalWebServer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkmate.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7860769e-f377-46d8-8343-12caf9c536da";
 			};
 			name = Debug;
 		};
@@ -541,8 +542,9 @@
 				INFOPLIST_FILE = FELocalWebServer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FlyElephant.FELocalWebServer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkmate.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7860769e-f377-46d8-8343-12caf9c536da";
 			};
 			name = Release;
 		};
