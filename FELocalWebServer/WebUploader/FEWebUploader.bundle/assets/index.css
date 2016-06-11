@@ -89,6 +89,13 @@ body {
     color: #ffffff;
     top: 0px;
 }
+.wrapper .content .upload .upload-progress .upload-cancel {
+    position: absolute;
+    color: #939393;
+    font-size: 10px;
+    top: 0;
+    right: -50px;
+}
 
 .footer,
 .replace {

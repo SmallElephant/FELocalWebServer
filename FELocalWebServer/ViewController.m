@@ -160,7 +160,7 @@ static const NSInteger Port=7258;
     
     NSLog(@"上传文件的地址:%@",documentsPath);
     self.customWebUploader = [[FEWebUploader alloc] initWithUploadDirectory:documentsPath];
-    [self.customWebUploader start];
+    [self.customWebUploader startWithPort:7258 bonjourName:nil];
     NSLog(@"Visit %@ in your web browser", self.customWebUploader.serverURL);
     [self showServerURL:[self.customWebUploader.serverURL absoluteString]];
 }
